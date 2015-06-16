@@ -15,3 +15,6 @@ ExecStart=/usr/bin/docker run \
     --name node-example \
     --link mongo:mongo \
     royvandewater/node-example
+
+[X-Fleet]
+MachineOf=mongo.service
