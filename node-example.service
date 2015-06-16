@@ -14,6 +14,7 @@ ExecStartPre=/usr/bin/docker pull royvandewater/node-example
 ExecStart=/usr/bin/docker run \
     --name node-example \
     --link mongo:mongo \
+    --env VIRTUAL_HOST=node-example.com \
     royvandewater/node-example
 
 [X-Fleet]
